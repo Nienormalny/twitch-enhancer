@@ -2,6 +2,7 @@ import monkas from '../assets/images/emotes/monkaS.png';
 import pepelaugh from '../assets/images/emotes/pepelaugh.png';
 import salami from '../assets/images/emotes/SALAMI.gif';
 import petthepeepo from '../assets/images/emotes/petthepeepo.gif';
+import coffee from '../assets/images/emotes/coffee.gif';
 
 export const emotes = (emoji) => {
     emoji = emoji.split(emoji)
@@ -21,6 +22,10 @@ export const emotes = (emoji) => {
         case '<3':
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'
+            };
+        case 'coffee':
+            return{
+                status: true, 'emoji': coffee
             };
         case ':d':
             return {

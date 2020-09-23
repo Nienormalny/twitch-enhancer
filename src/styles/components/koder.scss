@@ -13,7 +13,7 @@
     animation-direction: alternate-reverse;
     animation-duration: 2s;
     margin-top: auto;
-    margin-left: -25%;
+    margin-left: -310px;
     transform: scale(0.5);
     margin-bottom: -50px;
     transition: all 0.5s ease;
@@ -37,12 +37,12 @@
 
     .koder-name {
         position: absolute;
-        bottom: 70px;
+        bottom: 55px;
         color:#30f083;
         left: 50%;
         transform: translateX(calc(-50% - 5px));
         margin: 0;
-        font-size: 30px;
+        font-size: 35px;
         letter-spacing: 1px;
     }
 

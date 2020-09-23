@@ -4,6 +4,7 @@ import salami from '../assets/images/emotes/SALAMI.gif';
 import petthepeepo from '../assets/images/emotes/petthepeepo.gif';
 
 export const emotes = (emoji) => {
+    emoji = emoji.split(emoji)
     switch (emoji) {
         case 'monkas':
             return {

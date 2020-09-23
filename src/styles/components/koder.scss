@@ -1,0 +1,86 @@
+@import './animations.scss';
+
+.koder {
+    position: relative;
+    bottom: -3px;
+    right: -143px;
+    display: block;
+    width: 450px;
+    height: 348px;
+    animation-name: bodyMovement;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-duration: 2s;
+    margin-top: auto;
+    margin-left: -25%;
+    transform: scale(0.5);
+    margin-bottom: -50px;
+    transition: all 0.5s ease;
+    @include animationLoopMovement(bodyMovement, 2s, ease);
+
+    .face {
+        position: absolute;
+        left: calc(450px / 2 - 65px);
+        top: 135px;
+        @include animationLoopMovement(faceMovement, 2s, ease);
+        z-index: 2;
+    }
+
+    .body {
+        position: relative;
+        display: block;
+        @include animationLoopMovement(squashMovement, 2s, ease);
+        width: 100%;
+        filter: brightness(0.8) drop-shadow(-16px 21px 14px rgba(0,0,0, 0.6));
+    }
+
+    .koder-name {
+        position: absolute;
+        bottom: 70px;
+        color:#30f083;
+        left: 50%;
+        transform: translateX(calc(-50% - 5px));
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .msg {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(calc(-50% - 40px));
+        border: 3px solid black;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        min-width: 100px;
+        max-width: 200px;
+        background-color: white;
+        &:after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: -14px;
+            border-width: 3px 3px 0 0;
+            border-color: black;
+            border-style: solid;
+            transform: rotate(135deg);
+            right: 25px;
+            background-color: white;
+        }
+        p {
+            margin: 0;
+            display: block;
+            text-overflow: ellipsis;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}

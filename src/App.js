@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Koder from './components/koder.component';
+import Expire from './components/expire';
 import tmi from 'tmi.js';
 import * as _ from 'lodash';
 
@@ -37,15 +38,15 @@ function App() {
         <TransitionGroup className="users">
           {!_.isEmpty(koders) && _.map(koders, (koder, id) => {
             const key = Object.keys(koder)[0];
-            return <CSSTransition
-              classNames="dude"
-              timeout={{enter: 500}}
-              enter={true}
-              key={id}>
-                {/* <Expire delay="5000"> */}
+            return <Expire delay="5000">
+              <CSSTransition
+                classNames="dude"
+                timeout={{enter: 500}}
+                enter={true}
+                key={id}>
                   <Koder koder={koder}/>
-                {/* </Expire> */}
-            </CSSTransition>
+              </CSSTransition>
+            </Expire>
           })}
         </TransitionGroup>
     </div>

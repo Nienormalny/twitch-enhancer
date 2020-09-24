@@ -23,7 +23,7 @@ export const emotes = (emoji) => {
             return{
                 status: true, 'emoji': coffee
             };
-        case 'KEKW':
+        case 'kekw':
             return{
                 status: true, 'emoji': kekw
             };

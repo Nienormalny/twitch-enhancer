@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Koder from './components/koder.component';
-import Expire from './components/expire';
 import tmi from 'tmi.js';
 import * as _ from 'lodash';
 
@@ -19,9 +18,9 @@ function App() {
       },
       channels: [ 'nienormalny_' ]
     });
-    
+
     client.connect();
-    
+
     client.on('message', (channel, tags, message, self) => {
       if (users[tags.username]) {
         users[tags.username] = {...users[tags.username], 'msg': message};
@@ -37,16 +36,13 @@ function App() {
     <div className="App">
         <TransitionGroup className="users">
           {!_.isEmpty(koders) && _.map(koders, (koder, id) => {
-            const key = Object.keys(koder)[0];
-            return <Expire delay="5000">
-              <CSSTransition
-                classNames="dude"
-                timeout={{enter: 500}}
-                enter={true}
-                key={id}>
-                  <Koder koder={koder}/>
-              </CSSTransition>
-            </Expire>
+            return <CSSTransition
+              classNames="dude"
+              timeout={{enter: 500}}
+              enter={true}
+              key={id}>
+                <Koder koder={koder}/>
+            </CSSTransition>
           })}
         </TransitionGroup>
     </div>

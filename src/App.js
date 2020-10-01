@@ -31,7 +31,7 @@ function App() {
         secure: true,
         reconnect: true
       },
-      channels: [ 'hitoirl' ]
+      channels: [ 'nienormalny_' ]
     });
 
     client.connect();

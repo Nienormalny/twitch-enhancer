@@ -35,7 +35,7 @@ export const emotes = (emoji) => {
             };
         case 'babyyodasip':
             return{
-                status: true, 'emoji': babyodasip
+                status: true, 'emoji': babyyodasip
             };
         case '<3':
             return {

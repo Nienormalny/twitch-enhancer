@@ -2,8 +2,8 @@
 
 .koder {
     position: relative;
-    bottom: -3px;
-    right: -143px;
+    bottom: -30px;
+    right: -170px;
     display: block;
     width: 450px;
     height: 348px;
@@ -13,9 +13,9 @@
     animation-direction: alternate-reverse;
     animation-duration: 2s;
     margin-top: auto;
-    margin-left: -310px;
-    transform: scale(0.5);
-    margin-bottom: -50px;
+    margin-left: -360px;
+    transform: scale(0.3);
+    margin-bottom: -78px;
     transition: all 0.5s ease;
     @include animationLoopMovement(bodyMovement, 2s, ease);
 
@@ -25,6 +25,10 @@
         top: 135px;
         @include animationLoopMovement(faceMovement, 2s, ease);
         z-index: 2;
+        &.pepe {
+            margin-top: -75px;
+            left: calc(450px / 2 - 75px);
+        }
     }
 
     .body {
@@ -42,37 +46,32 @@
         left: 50%;
         transform: translateX(calc(-50% - 5px));
         margin: 0;
-        font-size: 35px;
+        font-size: 40px;
         letter-spacing: 1px;
     }
 
     .msg {
         position: absolute;
-        top: -60px;
-        left: 50%;
+        top: -70px;
+        left: 20%;
         transform: translateX(calc(-50% - 40px));
         border: 3px solid black;
         border-radius: 25px;
         padding: 10px 20px;
         text-align: center;
         color: black;
-        font-size: 30px;
+        font-size: 35px;
         min-width: 100px;
         max-width: 200px;
         background-color: white;
-        &:after {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            bottom: -14px;
-            border-width: 3px 3px 0 0;
-            border-color: black;
-            border-style: solid;
-            transform: rotate(135deg);
-            right: 25px;
-            background-color: white;
+        transform: scale(1.5);
+
+        &.image {
+            transform: scale(1);
+            top: -205px;
+            img {
+                width: 180px;
+            }
         }
         p {
             margin: 0;

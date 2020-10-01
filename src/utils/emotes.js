@@ -7,6 +7,7 @@ import kekw from '../assets/images/emotes/KEKW.png';
 import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
 import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
 import pogu from '../assets/images/emotes/PogU.png';
+import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif'
 
 export const emotes = (emoji) => {
     switch (emoji) {

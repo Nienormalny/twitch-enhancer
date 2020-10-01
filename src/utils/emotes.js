@@ -4,6 +4,7 @@ import salami from '../assets/images/emotes/SALAMI.gif';
 import petthepeepo from '../assets/images/emotes/petthepeepo.gif';
 import coffee from '../assets/images/emotes/coffee.gif'
 import kekw from '../assets/images/emotes/KEKW.png';
+import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
 
 export const emotes = (emoji) => {
     switch (emoji) {
@@ -27,6 +28,10 @@ export const emotes = (emoji) => {
             return{
                 status: true, 'emoji': kekw
             };
+        case 'feelsokayman':
+            return{
+                status: true, 'emoji': feelsokayman
+            }
         case '<3':
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'

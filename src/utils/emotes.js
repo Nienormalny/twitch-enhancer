@@ -7,6 +7,7 @@ import kekw from '../assets/images/emotes/KEKW.png';
 import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
 import pogu from '../assets/images/emotes/PogU.png';
 import hackermans from '../assets/images/emotes/HACKERMANS.gif';
@@ -15,6 +16,9 @@ import hackermans from '../assets/images/emotes/HACKERMANS.gif';
 =======
 import babyodasip from '../assets/images/emotes/BabyYodaSip.gif'
 >>>>>>> 98d8494... Dodalem BabyYodaSip z powrotem bo usunelo u mnie
+=======
+import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif'
+>>>>>>> f341a2e... Naprawiłem blad demb00* z literowka emotki BabyYodaSip
 
 export const emotes = (emoji) => {
     switch (emoji) {

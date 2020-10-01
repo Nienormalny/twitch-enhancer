@@ -6,11 +6,15 @@ import coffee from '../assets/images/emotes/coffee.gif'
 import kekw from '../assets/images/emotes/KEKW.png';
 import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
 import pogu from '../assets/images/emotes/PogU.png';
 import hackermans from '../assets/images/emotes/HACKERMANS.gif';
 =======
 >>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
+=======
+import babyodasip from '../assets/images/emotes/BabyYodaSip.gif'
+>>>>>>> 98d8494... Dodalem BabyYodaSip z powrotem bo usunelo u mnie
 
 export const emotes = (emoji) => {
     switch (emoji) {
@@ -38,11 +42,15 @@ export const emotes = (emoji) => {
             return{
                 status: true, 'emoji': feelsokayman
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 98d8494... Dodalem BabyYodaSip z powrotem bo usunelo u mnie
             };
         case 'babyyodasip':
             return{
                 status: true, 'emoji': babyyodasip
             };
+<<<<<<< HEAD
         case 'pogu':
             return {
                 status: true, 'emoji': pogu
@@ -50,6 +58,8 @@ export const emotes = (emoji) => {
 =======
             }
 >>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
+=======
+>>>>>>> 98d8494... Dodalem BabyYodaSip z powrotem bo usunelo u mnie
         case '<3':
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'

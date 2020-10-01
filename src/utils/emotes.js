@@ -41,7 +41,7 @@ export const emotes = (emoji) => {
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'
             };
-        case '.':
+        case 'pepelaugh':
             return {
                 status: true, 'emoji': pepelaugh
             };

@@ -4,6 +4,9 @@ import salami from '../assets/images/emotes/SALAMI.gif';
 import petthepeepo from '../assets/images/emotes/petthepeepo.gif';
 import coffee from '../assets/images/emotes/coffee.gif'
 import kekw from '../assets/images/emotes/KEKW.png';
+import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
+import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
+import pogu from '../assets/images/emotes/PogU.png';
 
 export const emotes = (emoji) => {
     switch (emoji) {
@@ -26,6 +29,18 @@ export const emotes = (emoji) => {
         case 'kekw':
             return{
                 status: true, 'emoji': kekw
+            };
+        case 'feelsokayman':
+            return{
+                status: true, 'emoji': feelsokayman
+            };
+        case 'babyyodasip':
+            return{
+                status: true, 'emoji': babyyodasip
+            };
+        case 'pogu':
+            return {
+                status: true, 'emoji': pogu
             };
         case '<3':
             return {

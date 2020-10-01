@@ -5,9 +5,12 @@ import petthepeepo from '../assets/images/emotes/petthepeepo.gif';
 import coffee from '../assets/images/emotes/coffee.gif'
 import kekw from '../assets/images/emotes/KEKW.png';
 import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
+<<<<<<< HEAD
 import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
 import pogu from '../assets/images/emotes/PogU.png';
 import hackermans from '../assets/images/emotes/HACKERMANS.gif';
+=======
+>>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
 
 export const emotes = (emoji) => {
     switch (emoji) {
@@ -34,6 +37,7 @@ export const emotes = (emoji) => {
         case 'feelsokayman':
             return{
                 status: true, 'emoji': feelsokayman
+<<<<<<< HEAD
             };
         case 'babyyodasip':
             return{
@@ -43,6 +47,9 @@ export const emotes = (emoji) => {
             return {
                 status: true, 'emoji': pogu
             };
+=======
+            }
+>>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
         case '<3':
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'

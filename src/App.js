@@ -10,10 +10,14 @@ function GETRequest(url) // https://stackoverflow.com/questions/247483/http-get-
 {
   var xmlHttp = new XMLHttpRequest();
 <<<<<<< HEAD
+<<<<<<< HEAD
   xmlHttp.open("GET", url, false);
 =======
   xmlHttp.open("GET", url, false); // false for synchronous request
 >>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
+=======
+  xmlHttp.open("GET", url, false);
+>>>>>>> 0695ff7... Zoptymalizowane
   xmlHttp.send(null);
   return xmlHttp.responseText;
 }
@@ -31,7 +35,7 @@ function App() {
         secure: true,
         reconnect: true
       },
-      channels: [ 'nienormalny_' ]
+      channels: [ 'hitoirl' ]
     });
 
     client.connect();
@@ -42,6 +46,7 @@ function App() {
         setKoder({...users});
       } else {
         if (Object.values(bots).includes(tags.username))
+<<<<<<< HEAD
           return;
         users = {...users, [tags.username]: {'msg': message, 'channel': tags}};
         // check if user is bot
@@ -50,7 +55,10 @@ function App() {
         var _users = parsed['users']['2'];
         //console.log(Object.values(_users).includes(tags.username));
         if (Object.values(_users).includes(tags.username))
+=======
+>>>>>>> 0695ff7... Zoptymalizowane
           return;
+        users = {...users, [tags.username]: {'msg': message, 'channel': tags}};
         setKoder({...users});
       }
     });

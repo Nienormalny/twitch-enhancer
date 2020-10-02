@@ -13,7 +13,7 @@ function App() {
   let users = {};
 
   var response = GETRequest("https://api.frankerfacez.com/v1/badge/bot");
-  var bots = JSON.parse(response)['users']['2']; // lista oficjalnych botow z ffz
+  var bots = JSON.parse(response)['users']['2'];
   useEffect(() => {
     const client = new tmi.Client({
       options: { debug: true },
@@ -31,8 +31,7 @@ function App() {
         users[tags.username] = {...users[tags.username], 'msg': message};
         setKoder({...users});
       } else {
-        // sprawdz czy uzytkownik jest botem
-        if (Object.values(bots).includes(tags.username))
+        if (Object.values(bots).includes(tags.username)) // check if user is bot
           return;
         users = {...users, [tags.username]: {'msg': message, 'channel': tags}};
         setKoder({...users});

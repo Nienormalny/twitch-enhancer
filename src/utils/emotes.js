@@ -7,6 +7,7 @@ import kekw from '../assets/images/emotes/KEKW.png';
 import feelsokayman from '../assets/images/emotes/FeelsOkayMan.png';
 import babyyodasip from '../assets/images/emotes/BabyYodaSip.gif';
 import pogu from '../assets/images/emotes/PogU.png';
+import hackermans from '../assets/images/emotes/HACKERMANS.gif';
 
 export const emotes = (emoji) => {
     switch (emoji) {
@@ -46,7 +47,7 @@ export const emotes = (emoji) => {
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/9/default/light/3.0'
             };
-        case ':d':
+        case 'pepelaugh':
             return {
                 status: true, 'emoji': pepelaugh
             };
@@ -74,6 +75,10 @@ export const emotes = (emoji) => {
             return {
                 status: true, 'emoji': 'https://static-cdn.jtvnw.net/emoticons/v2/303571809/default/light/3.0'
             };
+        case 'hackermans':
+            return {
+                status: true, 'emoji': hackermans
+            }
         default:
             return {
                 status: false

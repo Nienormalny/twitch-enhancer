@@ -6,21 +6,7 @@ import * as _ from 'lodash';
 
 import './styles/styles.scss';
 
-function GETRequest(url) // https://stackoverflow.com/questions/247483/http-get-request-in-javascript
-{
-  var xmlHttp = new XMLHttpRequest();
-<<<<<<< HEAD
-<<<<<<< HEAD
-  xmlHttp.open("GET", url, false);
-=======
-  xmlHttp.open("GET", url, false); // false for synchronous request
->>>>>>> d3844d9... Sprawdz czy uzytkownik jest botem, jezeli tak to nie dodawaj go
-=======
-  xmlHttp.open("GET", url, false);
->>>>>>> 0695ff7... Zoptymalizowane
-  xmlHttp.send(null);
-  return xmlHttp.responseText;
-}
+import { GETRequest } from './utils/functions.js';
 
 function App() {
   const [koders, setKoder] = useState({});
@@ -35,7 +21,7 @@ function App() {
         secure: true,
         reconnect: true
       },
-      channels: [ 'nienormalny_' ]
+      channels: [ 'hitoirl' ]
     });
 
     client.connect();
@@ -46,17 +32,10 @@ function App() {
         setKoder({...users});
       } else {
         if (Object.values(bots).includes(tags.username))
-<<<<<<< HEAD
           return;
         users = {...users, [tags.username]: {'msg': message, 'channel': tags}};
         // check if user is bot
-        var ret = GETRequest("https://api.frankerfacez.com/v1/badge/bot"); // send GET request to ffz api
-        var parsed = JSON.parse(ret); // parse received text
-        var _users = parsed['users']['2'];
-        //console.log(Object.values(_users).includes(tags.username));
-        if (Object.values(_users).includes(tags.username))
-=======
->>>>>>> 0695ff7... Zoptymalizowane
+        if (Object.values(bots).includes(tags.username))
           return;
         users = {...users, [tags.username]: {'msg': message, 'channel': tags}};
         setKoder({...users});

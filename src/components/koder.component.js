@@ -9,8 +9,8 @@ const Koder = ({koder}) => {
   return koder && <div className="koder">
     <img className={classnames('face', {'pepe': koder.channel.subscriber})} alt="koder face" src={koder.channel.subscriber ? pepeface : face}/>
     <img className="body" alt="koder body" src={body}/>
-    <div className={classnames("msg", {'image': emotes(koder.msg.toLowerCase().replace(' ', '')).status})}>
-      {emotes(koder.msg.toLowerCase().replace(' ', '')).status ? <img src={emotes(koder.msg.toLowerCase().replace(' ', '')).emoji} alt={koder.msg} />: <p>{koder.msg}</p>}
+    <div className={classnames("msg", {'image': emotes(koder.msg.replace(' ', '')).status})}>
+      {emotes(koder.msg.replace(' ', '')).status ? <img src={emotes(koder.msg.replace(' ', '')).emoji} alt={koder.msg} />: <p>{koder.msg}</p>}
     </div>
     <p className="koder-name">{koder.channel.username}</p>
   </div>
